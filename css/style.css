@@ -20,6 +20,14 @@ body {
     list-style: none; 
 }
 
+.link {
+    text-decoration: none;
+}
+
+.address {
+   font-style: normal 
+}
+
 .banner {
     background-color: var(--text-color);
 }
@@ -169,12 +177,4 @@ body {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     text-decoration: top;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.address {
-   font-style: normal 
 }
