@@ -1,0 +1,180 @@
+:root  {
+    font-family: "Roboto", sans-serif;
+    --text-color: #2E2F42;
+    --butt-color-hover: #404bbf;
+    --color-white: #FFFFFF;
+    --color-main-font: #434455;
+    --main-font: "Roboto", sans-serif;
+    --sec-font: "Raleway", sans-serif;
+}
+
+body {
+    background-color: var(--color-white);
+    color:#434455;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.list {
+    list-style: none; 
+}
+
+.banner {
+    background-color: var(--text-color);
+}
+
+.banner-h {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+}
+.banner-but {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    cursor: pointer;
+    background-color: #4D5AE5;
+}
+
+.banner-but:hover, 
+.banner-but:focus {
+    background-color: var(--butt-color-hover);
+}
+
+.tech-h,
+.teem-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.tech-p,
+.teem-p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-main-font);
+}
+
+.tech-t,
+.service-h,
+.teem-h {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.teem {
+    background-color: #F4F4FD;
+}
+
+.teem-li {
+    background-color: var(--color-white);
+}
+
+.nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.nav:hover,
+.nav:focus,
+.contact:hover,
+.contact:focus {
+    color: var(--butt-color-hover);
+}
+
+.contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-main-font);
+}
+
+.butts-punkt {
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.butts-punkt:hover,
+.butts-punkt:focus {
+    color: var(--color-white);
+    background-color: var(--butt-color-hover);
+}
+
+.card-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.card-type {    
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;    
+}
+
+.logo {
+    font-family: var(--sec-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+
+.studio {
+    color: #F4F4FD;
+}
+
+.studio-up {
+    color: var(--text-color);
+}
+
+.footer {
+    background-color: var(--text-color);
+}
+
+.textstudio {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    text-decoration: top;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.address {
+   font-style: normal 
+}
