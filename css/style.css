@@ -1,5 +1,6 @@
 :root  {
     --text-color: #2E2F42;
+    --butt-color: #4D5AE5;
     --butt-color-hover: #404bbf;
     --color-white: #FFFFFF;
     --color-main-font: #434455;
@@ -12,11 +13,11 @@ body {
     background-color: var(--color-white);
     color:#434455;
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
     letter-spacing: 0.02em;
 
 }
+
+/* dop class  */
 
 .list {
     list-style: none; 
@@ -29,6 +30,8 @@ body {
 .address {
    font-style: normal;
 }
+
+/* Заказ */
 
 .banner {
     background-color: var(--text-color);
@@ -51,13 +54,15 @@ body {
     letter-spacing: 0.04em;
     color: var(--color-white);
     cursor: pointer;
-    background-color: #4D5AE5;
+    background-color: var(--butt-color);
 }
 
 .banner-but:hover, 
 .banner-but:focus {
     background-color: var(--butt-color-hover);
 }
+
+/* Наше преимущество / Перечень работ */
 
 .tech-h,
 .teem-name,
@@ -87,6 +92,8 @@ body {
     color: var(--text-color);
 }
 
+/* Наша команда */
+
 .teem {
     background-color: var(--color-sec-font);
 }
@@ -94,6 +101,8 @@ body {
 .teem-li {
     background-color: var(--color-white);
 }
+
+/* Навигация */
 
 .nav {
     font-weight: 500;
@@ -110,6 +119,8 @@ body {
     color: var(--butt-color-hover);
 }
 
+/* Контакт */
+
 .contact {
     font-size: 16px;
     line-height: 1.5;
@@ -117,12 +128,14 @@ body {
     color: var(--color-main-font);
 }
 
+/* Фильтр работ */
+
 .butts-punkt {
-    color: #4D5AE5;
+    color: var(--butt-color);
     background-color: var(--color-sec-font);
     font-family: var(--main-font);
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
@@ -133,6 +146,8 @@ body {
     background-color: var(--butt-color-hover);
 }
 
+/* Логотип */
+
 .logo {
     font-family: var(--sec-font);
     font-weight: 800;
@@ -140,7 +155,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--butt-color);
 }
 
 .studio {
@@ -151,14 +166,15 @@ body {
     color: var(--text-color);
 }
 
-.footer {
-    background-color: var(--text-color);
-}
-
 .textstudio {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-sec-font);
-    text-decoration: top;
+}
+
+/* Подвал */
+
+.footer {
+    background-color: var(--text-color);
 }
