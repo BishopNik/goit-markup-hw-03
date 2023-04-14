@@ -1,3 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+
+/* outline: 1px solid red */
+
 :root  {
     --text-color: #2E2F42;
     --butt-color: #4D5AE5;
@@ -12,7 +18,7 @@
 body {
     background-color: var(--color-white);
     color:#434455;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font);
     letter-spacing: 0.02em;
 
 }
@@ -31,7 +37,103 @@ body {
    font-style: normal;
 }
 
+/* Навигация */
+
+.container-nav {
+    outline: 1px solid red;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.nav:hover,
+.nav:focus,
+.contact:hover,
+.contact:focus {
+    color: var(--butt-color-hover);
+}
+
+/* Контакт */
+
+.contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-main-font);
+}
+
+/* Фильтр работ */
+
+.container-butts {
+    outline: 1px solid red;
+}
+
+.butts-punkt {
+    color: var(--butt-color);
+    background-color: var(--color-sec-font);
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.butts-punkt:hover,
+.butts-punkt:focus {
+    color: var(--color-white);
+    background-color: var(--butt-color-hover);
+}
+
+/* Наше преимущество / Перечень работ / Услуги */
+
+.container-project {
+   outline: 1px solid red; 
+}
+
+.container-service {
+   outline: 1px solid red; 
+}
+
+.tech-h,
+.teem-name,
+.card-name  {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+.tech-p,
+.teem-p,
+.card-type {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-main-font);
+}
+
+.tech-t,
+.service-h,
+.teem-h {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
 /* Заказ */
+
+.container-banner {
+    outline: 1px solid red;
+}
 
 .banner {
     background-color: var(--text-color);
@@ -62,88 +164,15 @@ body {
     background-color: var(--butt-color-hover);
 }
 
-/* Наше преимущество / Перечень работ */
-
-.tech-h,
-.teem-name,
-.card-name  {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--text-color);
-}
-
-.tech-p,
-.teem-p,
-.card-type {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-main-font);
-}
-
-.tech-t,
-.service-h,
-.teem-h {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--text-color);
-}
-
 /* Наша команда */
 
-.teem {
-    background-color: var(--color-sec-font);
+.container-teem {
+   outline: 1px solid red; 
+   background-color: var(--color-sec-font);
 }
 
 .teem-li {
     background-color: var(--color-white);
-}
-
-/* Навигация */
-
-.nav {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-}
-
-.nav:hover,
-.nav:focus,
-.contact:hover,
-.contact:focus {
-    color: var(--butt-color-hover);
-}
-
-/* Контакт */
-
-.contact {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-main-font);
-}
-
-/* Фильтр работ */
-
-.butts-punkt {
-    color: var(--butt-color);
-    background-color: var(--color-sec-font);
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-}
-.butts-punkt:hover,
-.butts-punkt:focus {
-    color: var(--color-white);
-    background-color: var(--butt-color-hover);
 }
 
 /* Логотип */
@@ -174,6 +203,10 @@ body {
 }
 
 /* Подвал */
+
+.container-footer {
+       outline: 1px solid red; 
+}
 
 .footer {
     background-color: var(--text-color);

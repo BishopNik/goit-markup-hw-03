@@ -12,47 +12,58 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a class="link logo" href="./index.html">
-          WEB<span class="studio-up">Studio</span></a
-        >
-        <ul class="list">
-          <li>
-            <a class="link nav" href="./index.html">Studio</a>
-          </li>
-          <li>
-            <a class="link nav" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="link nav" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a class="link contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link contact" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <!-- Навигация -->
+      <div class="container-nav">
+        <nav>
+          <a class="link logo" href="./index.html">
+            WEB<span class="studio-up">Studio</span></a
+          >
+          <ul class="list">
+            <li>
+              <a class="link nav" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="link nav" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="link nav" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <!-- Контакт -->
+        <address class="address">
+          <ul class="list">
+            <li>
+              <a class="link contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
-      <section class="banner">
-        <!--Заказ-->
+      <!--Заказ-->
+      <section class="container-banner banner">
         <h1 class="banner-h">Effective Solutions for Your Business</h1>
         <button type="button" class="banner-but">Order Service</button>
       </section>
+      <!-- Наше преимущество-->
       <section class="tech">
-        <!-- Наше преимущество-->
         <h2 hidden class="tech-t">Наше преимущество</h2>
         <ul class="list">
           <li>
@@ -86,7 +97,7 @@
         </ul>
       </section>
       <!--Услуги-->
-      <section class="service">
+      <section class="container-service">
         <h2 class="service-h">What are we doing</h2>
         <ul class="list">
           <li>
@@ -101,7 +112,7 @@
         </ul>
       </section>
       <!--Наша команда-->
-      <section class="teem">
+      <section class="container-teem">
         <h2 class="teem-h">Our Team</h2>
         <ul class="list">
           <li class="teem-li">
@@ -139,7 +150,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="container-footer footer">
       <!--Подвал -->
       <a class="link logo" href="./index.html">
         Web<span class="studio">Studio</span></a
