@@ -144,6 +144,7 @@ body {
 
 .container-project > li {
   display: inline-block;
+  margin-bottom: 32px;
 }
 
 .container-service li {
@@ -165,6 +166,10 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: var(--text-color);
+}
+
+.card-name {
+  margin-bottom: 8px;
 }
 
 .tech-p,
@@ -204,11 +209,7 @@ body {
 /* Заказ */
 
 .container-banner {
-  outline: 1px solid red;
   position: center;
-  width: 1440px;
-  height: 600px;
-  padding-top: 188px;
   margin: 0 auto 120px auto;
   text-align: center;
 }
@@ -219,6 +220,10 @@ body {
 
 .banner {
   background-color: var(--text-color);
+  outline: 1px solid red;
+  padding: 188px 0;
+  width: 1440px;
+  height: 600px;
 }
 
 .banner-h {
@@ -229,17 +234,16 @@ body {
   text-align: center;
   color: var(--color-white);
   margin: 0px 472px 48px 472px;
-  min-width: 520px;
+  max-width: 496px;
   height: 120px;
 }
 
 .banner-but {
-  display: inline-block;
+  display: block;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--color-white);
@@ -247,6 +251,7 @@ body {
   background-color: var(--butt-color);
   min-width: 169px;
   height: 56px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
