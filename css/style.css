@@ -1,213 +1,331 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* outline: 1px solid red */
-
-:root  {
-    --text-color: #2E2F42;
-    --butt-color: #4D5AE5;
-    --butt-color-hover: #404bbf;
-    --color-white: #FFFFFF;
-    --color-main-font: #434455;
-    --color-sec-font: #F4F4FD;
-    --main-font: "Roboto", sans-serif;
-    --sec-font: "Raleway", sans-serif;
+:root {
+  --text-color: #2e2f42;
+  --butt-color: #4d5ae5;
+  --butt-color-hover: #404bbf;
+  --color-white: #ffffff;
+  --color-main-font: #434455;
+  --color-sec-font: #f4f4fd;
+  --color-butt: #e7e9fc;
+  --main-font: 'Roboto', sans-serif;
+  --sec-font: 'Raleway', sans-serif;
 }
 
 body {
-    background-color: var(--color-white);
-    color:#434455;
-    font-family: var(--main-font);
-    letter-spacing: 0.02em;
-
+  background-color: var(--color-white);
+  color: #434455;
+  font-family: var(--main-font);
+  letter-spacing: 0.02em;
 }
 
 /* dop class  */
 
 .list {
-    list-style: none; 
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .address {
-   font-style: normal;
+  font-style: normal;
+}
+
+/* Header */
+
+.container-header {
+  width: 1440px;
+  padding-left: 141px;
+  padding-right: 141px;
 }
 
 /* Навигация */
 
 .container-nav {
-    outline: 1px solid red;
-    margin-bottom: 0;
-    margin-top: 0;
+  outline: 1px solid red;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 1158px;
 }
 
 .nav {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 .nav:hover,
 .nav:focus,
 .contact:hover,
 .contact:focus {
-    color: var(--butt-color-hover);
+  color: var(--butt-color-hover);
 }
 
 /* Контакт */
 
 .contact {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-main-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-main-font);
 }
 
 /* Фильтр работ */
 
 .container-butts {
-    outline: 1px solid red;
+  outline: 1px solid red;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  border: 0px solid transparent;
+  padding-left: 427px;
+}
+
+.container-butts > li {
+  display: inline-block;
 }
 
 .butts-punkt {
-    color: var(--butt-color);
-    background-color: var(--color-sec-font);
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--color-butt);
+  border-radius: 4px;
+  color: var(--butt-color);
+  background-color: var(--color-sec-font);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  margin-right: 24px;
 }
+
 .butts-punkt:hover,
 .butts-punkt:focus {
-    color: var(--color-white);
-    background-color: var(--butt-color-hover);
+  color: var(--color-white);
+  background-color: var(--butt-color-hover);
 }
 
 /* Наше преимущество / Перечень работ / Услуги */
 
 .container-project {
-   outline: 1px solid red; 
+  outline: 1px solid red;
+  margin-bottom: 120px;
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .container-service {
-   outline: 1px solid red; 
+  outline: 1px solid red;
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.container-tech {
+  outline: 1px solid red;
+  width: 1158px;
+  margin: 0 auto 120px auto;
+  padding: 0 15px;
+}
+
+.container-tech-section {
+  display: inline-block;
+  width: 264px;
+  height: 104px;
+}
+
+.container-project > li {
+  display: inline-block;
+}
+
+.container-service li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 120px;
+}
+
+.container-service > .service-h {
+  margin-bottom: 72px;
 }
 
 .tech-h,
 .teem-name,
-.card-name  {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--text-color);
+.card-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-color);
 }
 
 .tech-p,
 .teem-p,
 .card-type {
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-main-font);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-main-font);
+}
+
+.container-tech.tech-p {
+  display: inline-block;
+  width: 264px;
+  height: 72px;
+}
+
+.tech-h {
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .tech-t,
 .service-h,
 .teem-h {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-color);
 }
 
 /* Заказ */
 
 .container-banner {
-    outline: 1px solid red;
+  outline: 1px solid red;
+  position: center;
+  width: 1440px;
+  height: 600px;
+  padding-top: 188px;
+  margin: 0 auto 120px auto;
+  text-align: center;
+}
+
+.container-banner > button {
+  display: inline-block;
 }
 
 .banner {
-    background-color: var(--text-color);
+  background-color: var(--text-color);
 }
 
 .banner-h {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    color: var(--color-white);
-}
-.banner-but {
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
-    color: var(--color-white);
-    cursor: pointer;
-    background-color: var(--butt-color);
+  margin: 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--color-white);
+  margin: 0px 472px 48px 472px;
+  min-width: 520px;
+  height: 120px;
 }
 
-.banner-but:hover, 
+.banner-but {
+  display: inline-block;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  cursor: pointer;
+  background-color: var(--butt-color);
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.banner-but:hover,
 .banner-but:focus {
-    background-color: var(--butt-color-hover);
+  background-color: var(--butt-color-hover);
 }
 
 /* Наша команда */
 
 .container-teem {
-   outline: 1px solid red; 
-   background-color: var(--color-sec-font);
+  outline: 1px solid red;
+  background-color: var(--color-sec-font);
+  padding-top: 120px;
+  margin: 0 auto;
+  width: 1158px;
+}
+.container-teem > .teem-h {
+  margin-bottom: 72px;
+}
+.container-teem li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 120px;
 }
 
 .teem-li {
-    background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 
 /* Логотип */
 
 .logo {
-    font-family: var(--sec-font);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--butt-color);
+  font-family: var(--sec-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--butt-color);
 }
 
 .studio {
-    color: var(--color-sec-font);
+  color: var(--color-sec-font);
 }
 
 .studio-up {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .textstudio {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-sec-font);
+  margin: 0 1020px 100px 156px;
+  width: 264px;
+  height: 72px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-sec-font);
 }
 
 /* Подвал */
 
 .container-footer {
-       outline: 1px solid red; 
+  outline: 0px solid transparent;
+  margin: 0 auto;
+}
+
+.container-logo {
+  outline: 0px solid transparent;
+  display: inline-block;
+  width: 115px;
+  height: 24px;
+  margin: 100px 1169px 16px 156px;
 }
 
 .footer {
-    background-color: var(--text-color);
+  background-color: var(--text-color);
+  width: 1440px;
+  height: 312px;
 }
