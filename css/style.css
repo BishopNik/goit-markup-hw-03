@@ -45,26 +45,24 @@ img {
 
 .size-content {
   padding: 0 15px;
+  width: 1158px;
+  margin: 0 auto;
 }
 
 /* Header */
 
 .container-header {
   border-bottom: 1px solid #e7e9fc;
-  /* width: 1440px;
-  padding-left: 141px;
-  padding-right: 141px; */
 }
 
 /* Навигация */
 
 .container-menu {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   display: flex;
   align-items: center;
-  margin-bottom: 0;
-  margin-top: 0;
-  /* width: 1158px; */
+  /* margin-bottom: 0;
+  margin-top: 0; */
 }
 
 .container-nav {
@@ -231,21 +229,23 @@ img {
 /* Заказ */
 
 .container-banner {
+  /* outline: 1px solid red; */
   position: center;
-  margin: 0 auto 120px auto;
   text-align: center;
 }
 
 .container-banner > button {
-  display: inline-block;
+  display: block;
+  margin: auto;
 }
 
 .banner {
   background-color: var(--text-color);
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   padding: 188px 0;
   width: 1440px;
   height: 600px;
+  margin: 0 auto 120px auto;
 }
 
 .banner-h {
@@ -255,13 +255,12 @@ img {
   line-height: 1.07;
   text-align: center;
   color: var(--color-white);
-  margin: 0px 472px 48px 472px;
   max-width: 496px;
   height: 120px;
+  margin: 0 auto 64px auto;
 }
 
 .banner-but {
-  display: block;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -276,7 +275,6 @@ img {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 16px 32px;
 }
 
 .banner-but:hover,
@@ -316,7 +314,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--butt-color);
-  margin-right: 76px;
+  padding: 24px 0;
 }
 
 .studio {
