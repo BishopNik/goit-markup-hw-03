@@ -43,7 +43,7 @@ img {
   margin-left: auto;
 }
 
-.size-content {
+.container {
   padding: 0 15px;
   width: 1158px;
   margin: 0 auto;
@@ -317,7 +317,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--butt-color);
-  /* padding: 24px 0; */
   display: inline-block;
 }
 
