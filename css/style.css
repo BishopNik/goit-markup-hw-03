@@ -21,6 +21,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+img {
+  display: block;
+}
+
 /* dop class  */
 
 .list {
@@ -36,23 +40,36 @@ body {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.size-content {
+  padding: 0 15px;
 }
 
 /* Header */
 
 .container-header {
-  width: 1440px;
+  border-bottom: 1px solid #e7e9fc;
+  /* width: 1440px;
   padding-left: 141px;
-  padding-right: 141px;
+  padding-right: 141px; */
 }
 
 /* Навигация */
 
-.container-nav {
+.container-menu {
   outline: 1px solid red;
+  display: flex;
+  align-items: center;
   margin-bottom: 0;
   margin-top: 0;
-  width: 1158px;
+  /* width: 1158px; */
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -61,6 +78,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
 }
 
 .nav:hover,
@@ -294,6 +316,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--butt-color);
+  margin-right: 76px;
 }
 
 .studio {
