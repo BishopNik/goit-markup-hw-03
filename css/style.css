@@ -290,8 +290,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 32px;
-  gap: 32px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   width: 264px;
@@ -307,7 +305,7 @@ img {
   margin-bottom: 8px;
 }
 
-.teem-person {
+.team-person {
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
@@ -324,6 +322,7 @@ img {
   color: var(--butt-color);
   display: flex;
   margin-right: 76px;
+  display: inline-block;
 }
 
 .studio {
