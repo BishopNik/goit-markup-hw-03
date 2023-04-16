@@ -32,6 +32,9 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .link {
@@ -44,6 +47,7 @@ img {
 }
 
 .container {
+  outline: 1px solid greenyellow;
   padding: 0 15px;
   width: 1158px;
   margin: 0 auto;
@@ -57,8 +61,7 @@ img {
 
 /* Навигация */
 
-.container-menu {
-  /* outline: 1px solid red; */
+.menu {
   display: flex;
   align-items: center;
   margin-bottom: 0;
@@ -71,7 +74,7 @@ img {
   gap: 40px;
 }
 
-.nav {
+.nav-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -86,8 +89,8 @@ img {
   padding: 24px 0;
 }
 
-.nav:hover,
-.nav:focus,
+.nav-item:hover,
+.nav-item:focus,
 .contact:hover,
 .contact:focus {
   color: var(--butt-color-hover);
@@ -106,14 +109,11 @@ img {
 
 .container-butts {
   outline: 1px solid red;
-  padding-top: 96px;
-  padding-bottom: 72px;
-  border: 0px solid transparent;
-  padding-left: 427px;
+  padding: 96px 0 120px 0;
 }
 
-.container-butts > li {
-  display: inline-block;
+.butts {
+  margin-bottom: 72px;
 }
 
 .butts-punkt {
@@ -128,56 +128,52 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  margin-right: 24px;
 }
 
 .butts-punkt:hover,
 .butts-punkt:focus {
   color: var(--color-white);
   background-color: var(--butt-color-hover);
+  border: 1px solid transparent;
 }
 
 /* Наше преимущество / Перечень работ / Услуги */
 
+.tech {
+  padding: 120px 0;
+}
+
+.service {
+  padding-bottom: 120px;
+}
+
 .container-project {
   outline: 1px solid red;
-  margin-bottom: 120px;
-  width: 1158px;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .container-service {
   outline: 1px solid red;
-  width: 1158px;
-  margin: 0 auto;
 }
 
 .container-tech {
   outline: 1px solid red;
-  width: 1158px;
-  margin: 0 auto 120px auto;
-  padding: 0 15px;
 }
 
 .container-tech-section {
-  display: inline-block;
   width: 264px;
   height: 104px;
 }
 
-.container-project > li {
-  display: inline-block;
-  margin-bottom: 32px;
-}
-
-.container-service li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 120px;
-}
-
 .container-service > .service-h {
   margin-bottom: 72px;
+}
+.project-card {
+  padding: 32px 16px;
+  border-top: none;
+  border: 1px solid var(--color-butt);
 }
 
 .tech-h,
@@ -232,7 +228,6 @@ img {
 /* Заказ */
 
 .container-banner {
-  /* outline: 1px solid red; */
   position: center;
   text-align: center;
 }
@@ -244,11 +239,10 @@ img {
 
 .banner {
   background-color: var(--text-color);
-  /* outline: 1px solid red; */
   padding: 188px 0;
   width: 1440px;
   height: 600px;
-  margin: 0 auto 120px auto;
+  margin: 0 auto;
 }
 
 .banner-h {
@@ -287,9 +281,12 @@ img {
 
 /* Наша команда */
 
+.team {
+  margin-bottom: 120px;
+}
+
 .container-teem {
   outline: 1px solid red;
-  background-color: var(--color-sec-font);
   padding-top: 120px;
   margin: 0 auto;
   width: 1158px;
@@ -297,14 +294,33 @@ img {
 .container-teem > .teem-h {
   margin-bottom: 72px;
 }
-.container-teem li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 120px;
-}
 
 .teem-li {
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 32px;
+  gap: 32px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: 264px;
+  height: 380px;
+}
+
+.teem-p,
+.teem-name {
+  text-align: center;
+}
+
+.teem-name {
+  margin-bottom: 8px;
+}
+
+.teem-person {
+  padding: 32px 0;
 }
 
 /* Логотип */
@@ -318,6 +334,7 @@ img {
   text-transform: uppercase;
   color: var(--butt-color);
   display: inline-block;
+  margin-right: 76px;
 }
 
 .studio {

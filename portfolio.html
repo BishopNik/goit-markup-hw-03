@@ -24,19 +24,19 @@
   <body>
     <header class="container-header">
       <!-- Навигация -->
-      <div class="container-menu container">
+      <div class="menu container">
         <nav class="container-nav">
           <a class="link logo" href="./index.html">
             WEB<span class="studio-up">Studio</span></a
           >
           <ul class="list nav-menu">
             <li>
-              <a class="link nav" href="./index.html">Studio</a>
+              <a class="link nav-item" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="link nav" href="./portfolio.html">Portfolio</a>
+              <a class="link nav-item" href="./portfolio.html">Portfolio</a>
             </li>
-            <li><a class="link nav" href="">Contacts</a></li>
+            <li><a class="link nav-item" href="">Contacts</a></li>
           </ul>
         </nav>
         <!-- Контакт -->
@@ -53,16 +53,18 @@
       </div>
     </header>
     <main>
-      <section class="content-size">
-        <!-- Фильтр работ -->
-        <h1 hidden>Перечень работ</h1>
-        <ul class="container-butts list">
-          <li><button type="button" class="butts-punkt">All</button></li>
-          <li><button type="button" class="butts-punkt">Web Site</button></li>
-          <li><button type="button" class="butts-punkt">App</button></li>
-          <li><button type="button" class="butts-punkt">Design</button></li>
-          <li><button type="button" class="butts-punkt">Marketing</button></li>
-        </ul>
+      <!-- Фильтр работ -->
+      <section class="container-butts">
+        <div class="container">
+          <h1 hidden>Перечень работ</h1>
+          <ul class="list butts">
+            <li><button type="button" class="butts-punkt">All</button></li>
+            <li><button type="button" class="butts-punkt">Web Site</button></li>
+            <li><button type="button" class="butts-punkt">App</button></li>
+            <li><button type="button" class="butts-punkt">Design</button></li>
+            <li><button type="button" class="butts-punkt">Marketing</button></li>
+          </ul>
+        </div>
         <!-- Перечень работ -->
         <ul class="container-project list">
           <li>
@@ -73,8 +75,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Banking App Interface Concept</h2>
-              <p class="card-type">App</p>
+              <div class="project-card">
+                <h2 class="card-name">Banking App Interface Concept</h2>
+                <p class="card-type">App</p>
+              </div>
             </a>
           </li>
           <li>
@@ -85,8 +89,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Cashless Payment</h2>
-              <p class="card-type">Marketing</p>
+              <div class="project-card">
+                <h2 class="card-name">Cashless Payment</h2>
+                <p class="card-type">Marketing</p>
+              </div>
             </a>
           </li>
           <li>
@@ -97,8 +103,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Meditation App</h2>
-              <p class="card-type">App</p>
+              <div class="project-card">
+                <h2 class="card-name">Meditation App</h2>
+                <p class="card-type">App</p>
+              </div>
             </a>
           </li>
           <li>
@@ -109,8 +117,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Taxi Service</h2>
-              <p class="card-type">Marketing</p>
+              <div class="project-card">
+                <h2 class="card-name">Taxi Service</h2>
+                <p class="card-type">Marketing</p>
+              </div>
             </a>
           </li>
           <li>
@@ -121,8 +131,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Screen Illustrations</h2>
-              <p class="card-type">Design</p>
+              <div class="project-card">
+                <h2 class="card-name">Screen Illustrations</h2>
+                <p class="card-type">Design</p>
+              </div>
             </a>
           </li>
           <li>
@@ -133,8 +145,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Online Courses</h2>
-              <p class="card-type">Marketing</p>
+              <div class="project-card">
+                <h2 class="card-name">Online Courses</h2>
+                <p class="card-type">Marketing</p>
+              </div>
             </a>
           </li>
           <li>
@@ -145,8 +159,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Instagram Stories Concept</h2>
-              <p class="card-type">Design</p>
+              <div class="project-card">
+                <h2 class="card-name">Instagram Stories Concept</h2>
+                <p class="card-type">Design</p>
+              </div>
             </a>
           </li>
           <li>
@@ -157,8 +173,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Organic Food</h2>
-              <p class="card-type">Web Site</p>
+              <div class="project-card">
+                <h2 class="card-name">Organic Food</h2>
+                <p class="card-type">Web Site</p>
+              </div>
             </a>
           </li>
           <li>
@@ -169,8 +187,10 @@
                 width="360"
                 height="300"
               />
-              <h2 class="card-name">Fresh Coffee</h2>
-              <p class="card-type">Web Site</p>
+              <div class="project-card">
+                <h2 class="card-name">Fresh Coffee</h2>
+                <p class="card-type">Web Site</p>
+              </div>
             </a>
           </li>
         </ul>
