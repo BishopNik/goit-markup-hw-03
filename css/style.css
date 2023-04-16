@@ -25,6 +25,8 @@ img {
   display: block;
 }
 
+/* outline: 1px solid red; */
+
 /* dop class  */
 
 .list {
@@ -47,7 +49,6 @@ img {
 }
 
 .container {
-  outline: 1px solid greenyellow;
   padding: 0 15px;
   width: 1158px;
   margin: 0 auto;
@@ -108,7 +109,6 @@ img {
 /* Фильтр работ */
 
 .container-butts {
-  outline: 1px solid red;
   padding: 96px 0 120px 0;
 }
 
@@ -148,26 +148,20 @@ img {
 }
 
 .container-project {
-  outline: 1px solid red;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 
-.container-service {
-  outline: 1px solid red;
-}
-
-.container-tech {
-  outline: 1px solid red;
+.service-simple {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .container-tech-section {
-  width: 264px;
-  height: 104px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
-.container-service > .service-h {
+.service-h {
   margin-bottom: 72px;
 }
 .project-card {
@@ -202,7 +196,6 @@ img {
 }
 
 .container-tech.tech-p {
-  display: inline-block;
   width: 264px;
   height: 72px;
 }
@@ -215,8 +208,6 @@ img {
 .tech-t,
 .service-h,
 .teem-h {
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -282,12 +273,10 @@ img {
 /* Наша команда */
 
 .team {
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 
 .container-teem {
-  outline: 1px solid red;
-  padding-top: 120px;
   margin: 0 auto;
   width: 1158px;
 }
@@ -305,7 +294,6 @@ img {
   gap: 32px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
   width: 264px;
   height: 380px;
 }
@@ -320,7 +308,8 @@ img {
 }
 
 .teem-person {
-  padding: 32px 0;
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Логотип */
@@ -333,7 +322,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--butt-color);
-  display: inline-block;
+  display: flex;
   margin-right: 76px;
 }
 
@@ -346,7 +335,8 @@ img {
 }
 
 .textstudio {
-  margin: 0 auto 0 156px;
+  border: 0;
+  margin: 0;
   max-width: 264px;
   height: 72px;
   font-size: 16px;
@@ -358,9 +348,7 @@ img {
 /* Подвал */
 
 .container-footer {
-  margin: 0 auto;
-  width: 1440px;
-  height: 312px;
+  margin: 0;
   padding: 100px 0;
 }
 
